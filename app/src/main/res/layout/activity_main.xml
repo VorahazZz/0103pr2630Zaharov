@@ -1,0 +1,246 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <androidx.fragment.app.FragmentContainerView
+        android:id="@+id/fragmentContainerView"
+        android:layout_width="match_parent"
+        android:layout_height="@+id/textViewRes"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginBottom="16dp"
+        app:layout_constraintBottom_toTopOf="@+id/textViewRes"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:visibility="invisible"/>
+
+    <TextView
+        android:textAlignment="textEnd"
+        android:id="@+id/textViewRes"
+        android:layout_width="@+id/gridLayout"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toTopOf="@+id/textView"
+        app:layout_constraintEnd_toEndOf="@+id/gridLayout"
+        app:layout_constraintStart_toStartOf="@+id/gridLayout"
+        android:textSize="18sp"/>
+
+    <TextView
+        android:textAlignment="textEnd"
+        android:id="@+id/textView"
+        android:layout_width="@+id/gridLayout"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toTopOf="@+id/gridLayout"
+        app:layout_constraintEnd_toEndOf="@+id/gridLayout"
+        app:layout_constraintStart_toStartOf="@+id/gridLayout"
+        android:textSize="26sp"/>
+
+    <GridLayout
+        android:id="@+id/gridLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:flow_horizontalAlign="center"
+        app:flow_verticalAlign="center"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <Button
+            android:id="@+id/buttonClearAll"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_row="0"
+            android:layout_column="0"
+            android:backgroundTint="#EF5350"
+            android:text="CA"
+            android:textSize="26sp" />
+
+        <Button
+            android:id="@+id/buttonBackNum"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_row="0"
+            android:layout_column="1"
+            android:backgroundTint="#EF5350"
+            android:textSize="26sp" />
+
+        <Button
+            android:id="@+id/buttonClear"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_row="0"
+            android:layout_column="2"
+            android:backgroundTint="#EF5350"
+            android:text="C"
+            android:textSize="26sp" />
+
+        <Button
+            android:onClick="onClickOperations"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_row="0"
+            android:layout_column="3"
+            android:backgroundTint="#EF5350"
+            android:text="/"
+            android:textSize="26sp" />
+
+        <Button
+            android:onClick="onClickDigits"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_row="1"
+            android:layout_column="0"
+            android:text="7"
+            android:textSize="26sp" />
+
+        <Button
+            android:onClick="onClickDigits"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_row="1"
+            android:layout_column="1"
+            android:text="8"
+            android:textSize="26sp" />
+
+        <Button
+            android:onClick="onClickDigits"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_row="1"
+            android:layout_column="2"
+            android:text="9"
+            android:textSize="26sp" />
+
+        <Button
+            android:onClick="onClickOperations"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_row="1"
+            android:layout_column="3"
+            android:backgroundTint="#EF5350"
+            android:text="*"
+            android:textSize="26sp" />
+
+        <Button
+            android:onClick="onClickDigits"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_row="2"
+            android:layout_column="0"
+            android:text="4"
+            android:textSize="26sp" />
+
+        <Button
+            android:onClick="onClickDigits"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_row="2"
+            android:layout_column="1"
+            android:text="5"
+            android:textSize="26sp" />
+
+        <Button
+            android:onClick="onClickDigits"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_row="2"
+            android:layout_column="2"
+            android:text="6"
+            android:textSize="26sp" />
+
+        <Button
+            android:onClick="onClickOperations"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_row="2"
+            android:layout_column="3"
+            android:backgroundTint="#EF5350"
+            android:text="-"
+            android:textSize="26sp" />
+
+        <Button
+            android:onClick="onClickDigits"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_row="3"
+            android:layout_column="0"
+            android:text="1"
+            android:textSize="26sp" />
+
+        <Button
+            android:onClick="onClickDigits"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_row="3"
+            android:layout_column="1"
+            android:text="2"
+            android:textSize="26sp" />
+
+        <Button
+            android:onClick="onClickDigits"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_row="3"
+            android:layout_column="2"
+            android:text="3"
+            android:textSize="26sp" />
+
+        <Button
+            android:onClick="onClickOperations"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_row="3"
+            android:layout_column="3"
+            android:backgroundTint="#EF5350"
+            android:text="+"
+            android:textSize="26sp" />
+
+        <Button
+            android:id="@+id/buttonResult"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_row="4"
+            android:layout_column="0"
+            android:backgroundTint="#EF5350"
+            android:text="R"
+            android:textSize="26sp" />
+
+        <Button
+            android:onClick="onClickDigits"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_row="4"
+            android:layout_column="1"
+            android:text="0"
+            android:textSize="26sp" />
+
+        <Button
+            android:id="@+id/buttonDot"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_row="4"
+            android:layout_column="2"
+            android:backgroundTint="#EF5350"
+            android:text="."
+            android:textSize="26sp" />
+
+        <Button
+            android:id="@+id/buttonEq"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_row="4"
+            android:layout_column="3"
+            android:backgroundTint="#EF5350"
+            android:text="="
+            android:textSize="26sp" />
+
+    </GridLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
